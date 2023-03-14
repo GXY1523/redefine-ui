@@ -1,24 +1,21 @@
-# redefine-ui
+# REDEFINE-UI  组件库 
 
-## Project setup
-```
-pnpm install
-```
+### 快速开始
 
-### Compiles and hot-reloads for development
+### 1. 安装组件库
 ```
-pnpm run serve
+npm i redefine-ui
 ```
 
-### Compiles and minifies for production
-```
-pnpm run build
-```
+### 2.引用组件库
+```javascript
+// 全部引入
+import 'redefine-ui/dist/css/index.css'
+import MUI from 'redefine-ui';
+Vue.use(MUI);
 
-### Lints and fixes files
+// 按需引入
+import 'redefine-ui/dist/css/Demo.css';
+import {XyButton} from 'redefine-ui';
+Vue.use(XyButton);
 ```
-pnpm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

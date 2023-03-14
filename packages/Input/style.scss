@@ -1,0 +1,58 @@
+.xy-input{
+    // width: 100%;
+    width: 50%;
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    &__inner{
+        -webkit-appearance: none;
+        background-color: rgb(247, 249, 250);
+        border-radius: 3px;
+        border: 1px solid #e8e8e8;
+        box-sizing: border-box;
+        color: #b5b2b2;
+        display: inline-block;
+        font-size: inherit;
+        height: 40px;
+        outline: none;
+        padding: 0 15px;
+        transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+        width: 100%;
+        &:focus{
+            outline: none;
+            border-color: rgb(207, 240, 248);
+        }
+
+        // 禁用
+        &.is-disabled{
+            cursor: not-allowed;
+        }
+    }
+}
+
+.xy-input--suffix{
+
+    .xy-input__inner{
+        padding-right: 30px;
+    }
+    .xy-input__suffix{
+        position: absolute;
+        height: 100%;
+        right: 10px;
+        top: 0;
+        line-height: 40px;
+        text-align: center;
+        color: #e1dfdf;
+        transition: all .3s;
+        z-index: 900;
+        i{
+            color: #e1dfdf;
+            font-size: 14px;
+            cursor: pointer;
+            transition: color .2s cubic-bezier(.645,.045,.355,1);
+        }
+    }
+    .xy-icon-view-active{
+        color: rgb(36, 119, 234);
+    }
+}

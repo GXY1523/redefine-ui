@@ -1,0 +1,256 @@
+
+.xy-button{
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    // cursor : 网页浏览时用户鼠标指针的样式或图形形状
+    // pointer：光标为一只手
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #edeaea;
+    color: #5a5959;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0 15px 0 0;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    // 过渡
+    transition: 0.1s;
+    font-weight: 500;
+    // 禁止元素的文字被选中
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  
+    &:hover,&:focus{
+      color:  #86daf1;
+      border-color: #cadef7;
+      background-color: #fbfdfd;
+    }
+  }
+//组合一：默认按钮 
+
+  .xy-button--primary{
+    color:#fff;
+    background-color: #46a9f5;
+    border-color: #46a9f5;
+    &:hover,
+    &:focus{
+      background: #7bc2f8;
+      color: #fff;
+    }
+  }
+  .xy-button--success{
+    color:#fff;
+    background-color: #4caf4c;
+    border-color: #4caf4c;
+    &:hover,
+    &:focus{
+      background: #68af68;
+      color: #fff;
+    }
+  }
+  .xy-button--info{
+    color:#fff;
+    background-color: #494848;
+    border-color: #494848;
+    &:hover,
+    &:focus{
+      background: #7e7d7d;
+      color: #fff;
+    }
+  }
+  .xy-button--warning{
+    color:#fff;
+    background-color: #f69c27;
+    border-color: #f69c27;
+    &:hover,
+    &:focus{
+      background: #f6bd72;
+      color: #fff;
+    }
+  }
+  .xy-button--danger{
+    color:#fff;
+    background-color:#f43528;
+    border-color: #f43528;
+    &:hover,
+    &:focus{
+      background: #f16258;
+      color: #fff;
+    }
+  }
+
+  // 组合二：朴素按钮
+  .xy-button.is-plain{
+    color: #666262;
+    background: #fbfdfd;
+    &:hover,
+    &:focus{
+      color:  #fff;
+      border-color: #fbfdfd;
+      background-color:#edeaea;
+    }
+  }
+  .xy-button--primary.is-plain{
+    color: #46a9f5;
+    background: #b5daf5;
+    &:hover,
+    &:focus{
+      background:#46a9f5;
+      border-color: #b5daf5;
+      color: #fff;
+    }
+  }
+  .xy-button--success.is-plain{
+    color: #4caf4c;
+    background:#85d085;
+    &:hover,
+    &:focus{
+      background: #4caf4c;;
+      border-color: #85d085;
+      color: #fff;
+    }
+  }
+  .xy-button--info.is-plain{
+    color:  #494848;
+    background:  #c4c1c1;
+    &:hover,
+    &:focus{
+      background:  #494848;
+      border-color:  #c4c1c1;
+      color: #fff;
+    }
+  }
+  .xy-button--warning.is-plain{
+    color: #f69c27;
+    background: #e8c494;
+    &:hover,
+    &:focus{
+      background: #f69c27;
+      border-color:#e8c494;
+      color: #fff;
+    }
+  }
+  .xy-button--danger.is-plain{
+    color: #f43528;
+    background: #f58b84;
+    &:hover,
+    &:focus{
+      background:#f43528;
+      border-color: #f58b84;
+      color: #fff;
+    }
+  }
+
+  //组合三：圆角按钮
+  .xy-button.is-round{
+    border-radius: 20px;
+    padding: 12px 20px;
+  }
+
+  //组合四：圆形按钮
+  .xy-button.is-circle{
+    border-radius: 50%;
+    padding: 12px;
+  }
+// 图标
+// .xy-button [class*=xy-icon-]+span{
+//   margin-left: 5px;
+// }
+
+// 不可用
+.xy-button.is-disabled{
+  background: #fff;
+  border-color: #edeaea;
+  cursor: not-allowed;
+}
+.xy-button--primary.is-disabled{
+  background-color: #46a9f5;
+  border-color: #46a9f5;
+  
+}
+.xy-button--success.is-disabled{
+  background-color: #4caf4c;
+  border-color: #4caf4c;
+  
+}
+.xy-button--info.is-disabled{
+  background-color: #494848;
+  border-color: #494848;
+  
+}
+.xy-button--warning.is-disabled{
+  background-color: #f69c27;
+  border-color: #f69c27;
+  
+}
+.xy-button--danger.is-disabled{
+  background-color: #f43528;
+  border-color: #f43528;
+  
+}
+.xy-button.is-plain.is-disabled{
+  color: #edeaea;
+  background: #fbfdfd;
+  &:hover,
+  &:focus{
+    border-color: #edeaea;
+  }
+
+}
+.xy-button--primary.is-plain.is-disabled{
+  color: #46a9f5;
+  background: #b5daf5;
+  &:hover,
+  &:focus{
+    border-color: #46a9f5;
+  }
+}
+.xy-button--success.is-plain.is-disabled{
+  color: #4caf4c;
+  background:#85d085;
+  &:hover,
+  &:focus{
+    border-color: #4caf4c;
+  }
+  
+}
+.xy-button--info.is-plain.is-disabled{
+  color:  #494848;
+  background:  #c4c1c1;
+  &:hover,
+  &:focus{
+    border-color: #494848;
+  }
+}
+.xy-button--warning.is-plain.is-disabled{
+  color:  #f69c27;
+  background:  #e8c494;
+  &:hover,
+  &:focus{
+    border-color: #f69c27;
+  }
+  
+}
+.xy-button--danger.is-plain.is-disabled{
+  color:  #f43528;
+  background:  #f58b84;
+  &:hover,
+  &:focus{
+    border-color: #f43528;
+  }
+  
+}
+
+// 等待
+
+.xy-button.is-loading {
+  position: relative;
+  pointer-events: none;
+  background-color: #94ccf7;
+  animation: rotating 2s linear infinite;
+}
